@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create new account</title>
+    <link rel="icon" href="image/new account logo.PNG">
+
+<style>
+#newacc{
+    position: absolute;
+    top: 200px;
+    left: 500px;
+  
+    filter: opacity(90%);
+    color: #a13f70;
+    font-size: larger;
+    font-weight: 700;
+    background-color: rgb(173, 181, 189);
+    text-align: left;
+}
+</style>
+
+</head>
+<body>
+    <center>
+    <div id="newacc">
+        
+    <form action="login.html" enctype="multipart/form-data">
+
+        <label for="fname">First name :</label>
+        <input type="text" id="fname" required pattern="[a-zA-Z]{3,}" placeholder="Abcd">
+        <br><br>
+
+        <label for="lname">Last name :</label>
+        <input type="text" id="lname" required pattern="[a-zA-Z]{1,}" placeholder="abcd">
+        <br><br>
+
+        <label for="gender">Gender : </label>
+        <input type="radio" id="gender" required pattern="[a-zA-Z]{1,}" placeholder="abcd" name="gen">male
+        <input type="radio" id="gender" required pattern="[a-zA-Z]{1,}" placeholder="abcd" name="gen">female
+        <br><br>
+
+        <label for="dob">Date of Birth :</label>
+        <input type="date" id="dob" required placeholder="dd-mm-yyyy">
+        <br><br>
+
+        <label for="aadhar">Enter your Aadhar number :</label>
+        <input type="number" id="aadhar" required pattern="[0-9]{12}" placeholder="xxxx-xxxx-xxxx">
+        <br><br>
+
+        <label for="city">Enter your Current city :</label>
+        <input type="text" id="city" required pattern="[A-Za-z]{2,}" placeholder="Abcd">
+        <br><br>
+
+        <label for="photo">Upload your passport size photo :</label>
+        <input type="file" required id="photo">
+        <br><br>
+
+         
+        <input type="submit" required style="margin-left: 110px;">
+        <br><br>
+    </form>
+    
+    </div>
+    </body>
+    </center>
+
+
+</body>
+</html>
